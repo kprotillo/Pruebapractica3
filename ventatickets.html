@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Restaurante María Auxiliadora</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/res.css" />
+</head>
+<body>
+<header id="box">
+    <h1> Comprar tickets </h1>
+    <form id="compra">
+        <div class="frmg">
+            <br>
+            <label>Nombre</label>
+            <input type="text" class="frm" id="user" placeholder="Ingrese su nombre">
+        </div>
+        <div class="frmg">
+            <br>
+            <label>Película</label>
+            <div class="frmg">
+                <select class="frm" id="op">
+                    <option>Venom 2 Precio: $3.50</option>
+                    <option>Space Jam Precio: $4.50</option>
+                    <option>Black Widow Precio: $3.50</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <label>Cantidad</label>
+        <input type="number" class="frm" id="nTickets" min="1" max="60">
+        <br>
+        <button type="submit" id="cantidad" class="can">Comprar ya</button>
+            <br>
+    </form>
+    <article>
+        <h1>Compras realizadas:</h1><br>
+            <button type="button" id="localS" class="localS">Mostrar tickets comprados</button>
+            <div class="cont"></div>
+    </article>
+    <script src="js/venta.js"></script>
+</body>
+</html>
